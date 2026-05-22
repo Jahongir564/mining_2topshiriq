@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockPilot | Network Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="glow-bg"></div>
+
+    <div class="workspace-shell">
+      <header class="command-topbar">
+        <div class="identity-block">
+          <div class="logo-box">
+            <i data-lucide="scan-line"></i>
+          </div>
+          <div class="brand-text">
+            <h2>BlockPilot</h2>
+            <p>Network operations</p>
+          </div>
+        </div>
+
+        <nav class="top-nav" aria-label="Primary navigation">
+          <button class="nav-link active" data-view="overview">
+            <i data-lucide="radar"></i>
+            <span>Dashboard</span>
+          </button>
+          <button class="nav-link" data-view="mining">
+            <i data-lucide="cpu"></i>
+            <span>Mining</span>
+          </button>
+          <button class="nav-link" data-view="wallets">
+            <i data-lucide="badge-dollar-sign"></i>
+            <span>Accounts</span>
+          </button>
+          <button class="nav-link" data-view="exchange">
+            <i data-lucide="send"></i>
+            <span>Transfers</span>
+          </button>
+          <button class="nav-link" data-view="miners">
+            <i data-lucide="network"></i>
+            <span>Operators</span>
+          </button>
+        </nav>
+
+        <div class="topbar-actions">
+          <div class="network-pill-mini">
+            <span class="status-dot" id="api-status-dot"></span>
+            <span id="api-status-text">Connecting...</span>
+          </div>
+          <div class="wallet-minimal-card">
+            <div class="wallet-mini-info">
+              <span id="wallet-connect-status">Disconnected</span>
+              <span class="mono-tiny" id="wallet-connected-address">0x...</span>
+            </div>
+            <button id="connect-wallet-button" class="primary-button-mini">Connect</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="console-main">
+        <div class="console-title-row">
+          <div>
+            <p class="eyebrow">Proof of Work Demo</p>
+            <h1 id="current-view-title">Dashboard</h1>
+          </div>
+          <div class="api-minimal-config">
+            <div class="input-wrapper-mini">
+              <i data-lucide="server-cog"></i>
+              <input id="api-base-url" type="text" value="http://localhost:3000" />
+              <button id="save-api-url">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-container">
+          <section id="view-overview" class="view active">
+            <div class="overview-mosaic">
+              <aside class="stat-rail">
+                <article class="stat-card-mini panel">
+                  <div class="stat-icon-mini"><i data-lucide="blocks"></i></div>
+                  <div class="stat-data">
+                    <p>Blocks</p>
+                    <h3 id="chain-height">--</h3>
+                  </div>
+                </article>
+                <article class="stat-card-mini panel">
+                  <div class="stat-icon-mini"><i data-lucide="timer-reset"></i></div>
+                  <div class="stat-data">
+                    <p>Pending</p>
+                    <h3 id="pending-count">--</h3>
+                  </div>
+                </article>
+                <article class="stat-card-mini panel">
+                  <div class="stat-icon-mini"><i data-lucide="lock-keyhole"></i></div>
+                  <div class="stat-data">
+                    <p>Difficulty</p>
+                    <h3 id="difficulty-value">--</h3>
+                  </div>
+                </article>
+                <article class="stat-card-mini panel">
+                  <div class="stat-icon-mini"><i data-lucide="wallet-cards"></i></div>
+                  <div class="stat-data">
+                    <p>Accounts</p>
+                    <h3 id="wallet-count">--</h3>
+                  </div>
+                </article>
+              </aside>
+
+              <section class="panel ledger-panel">
+                <div class="section-head">
+                  <h2>Block Activity</h2>
+                  <span class="badge-mini" id="refresh-label">Syncing...</span>
+                </div>
+                <div id="block-chart" class="bar-chart">Loading chart...</div>
+                <div id="blocks-list" class="blocks-list-modern">Loading blocks...</div>
+              </section>
+
+              <section class="action-column">
+                <div class="panel mini-mining-panel">
+                  <div class="section-head">
+                    <h3>Quick Mine</h3>
+                    <span class="badge-mini" id="mining-status">Ready</span>
+                  </div>
+                  <button id="mine-button" class="primary-button-full">Mine Block</button>
+                </div>
+
+                <div class="panel log-panel-modern">
+                  <div class="section-head">
+                    <h3>Event Stream</h3>
+                    <button id="clear-logs" class="icon-btn-small"><i data-lucide="eraser"></i></button>
+                  </div>
+                  <div id="log-list" class="log-list-modern"></div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section id="view-mining" class="view">
+            <div class="mining-workbench">
+              <section class="panel full-mining-panel">
+                <div class="section-head">
+                  <h2>Block Production</h2>
+                  <span class="badge" id="mining-status-alt">Ready</span>
+                </div>
+                <div class="mining-controls-grid">
+                  <div class="mining-main-action">
+                    <p class="field-label">Manual execution</p>
+                    <button id="mine-button-alt" class="primary-button-large">Generate Block</button>
+                  </div>
+                  <div class="auto-mining-box">
+                    <p class="field-label">Demo automation</p>
+                    <div class="auto-btn-group">
+                      <button id="demo-start-button" class="secondary-button">Start</button>
+                      <button id="demo-stop-button" class="ghost-button">Stop</button>
+                    </div>
+                    <div class="demo-status-row">
+                      <span id="demo-status-badge" class="badge-mini">Demo: --</span>
+                      <span id="last-refresh-time" class="muted-text-tiny">Updated: --</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="panel mining-details-area">
+                <h3>Latest Block</h3>
+                <div id="latest-mined-block" class="latest-block-premium">
+                  <p class="empty-copy">Waiting for mining activity...</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <section id="view-wallets" class="view">
+            <section class="panel explorer-panel">
+              <div class="section-head">
+                <h2>Account Registry</h2>
+                <div class="search-box-premium">
+                  <i data-lucide="search-check"></i>
+                  <input id="wallet-lookup-input" type="text" placeholder="Search address..." />
+                  <button id="wallet-lookup-button">Check</button>
+                </div>
+              </div>
+              <div id="wallet-lookup-result" class="lookup-result-area"></div>
+              <div id="wallets-list" class="wallets-grid-premium">Loading accounts...</div>
+            </section>
+          </section>
+
+          <section id="view-exchange" class="view">
+            <div class="exchange-stack">
+              <section class="panel transfer-panel">
+                <div class="section-head">
+                  <h2>Token Transfer</h2>
+                </div>
+                <form id="transaction-form" class="refined-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Sender</label>
+                      <input name="sender" type="text" placeholder="0x..." required />
+                    </div>
+                    <div class="form-group">
+                      <label>Receiver</label>
+                      <input name="receiver" type="text" placeholder="0x..." required />
+                    </div>
+                  </div>
+                  <div class="form-row compact-row">
+                    <div class="form-group">
+                      <label>Amount</label>
+                      <input name="amount" type="number" step="0.0001" min="0.0001" required />
+                    </div>
+                    <div class="form-group">
+                      <label>Token</label>
+                      <select name="token">
+                        <option value="TokenA">TokenA</option>
+                        <option value="TokenB" selected>TokenB</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="primary-button-full">Submit Transaction</button>
+                  </div>
+                </form>
+                <div id="transaction-message" class="status-msg"></div>
+              </section>
+
+              <section class="panel swap-panel">
+                <div class="section-head">
+                  <h2>Token Swap</h2>
+                  <div class="rate-card">
+                    <i data-lucide="ratio"></i>
+                    <span>1 TokenA = 2 TokenB</span>
+                  </div>
+                </div>
+                <form id="swap-form" class="refined-form swap-inline">
+                  <div class="form-group">
+                    <label>Wallet</label>
+                    <select id="swap-wallet-select" name="address"></select>
+                  </div>
+                  <div class="form-group">
+                    <label>Amount (TokenA)</label>
+                    <input name="amount" type="number" step="0.0001" min="0.0001" required />
+                  </div>
+                  <button type="submit" class="secondary-button-full">Swap Tokens</button>
+                </form>
+                <div id="swap-message" class="status-msg"></div>
+              </section>
+            </div>
+          </section>
+
+          <section id="view-miners" class="view">
+            <section class="panel miners-panel">
+              <div class="section-head">
+                <h2>Operator Pool</h2>
+                <span class="badge-mini" id="pool-status">Shared mining</span>
+              </div>
+              <div class="pool-summary-grid">
+                <article class="pool-summary-card">
+                  <span>Hash power</span>
+                  <strong id="pool-total-power">--</strong>
+                </article>
+                <article class="pool-summary-card">
+                  <span>Reward</span>
+                  <strong id="pool-reward">50 TokenA</strong>
+                </article>
+                <article class="pool-summary-card">
+                  <span>Latest block</span>
+                  <strong id="pool-last-block">--</strong>
+                </article>
+              </div>
+              <div id="pool-round-list" class="pool-round-list">Waiting for the latest pool round...</div>
+              <div id="miners-list" class="miners-grid-large">Scanning operators...</div>
+            </section>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <div id="toast-stack" class="toast-stack"></div>
+
+    <script>
+      lucide.createIcons();
+      window.refreshIcons = () => lucide.createIcons();
+    </script>
+    <script src="app.js?v=9"></script>
+  </body>
+</html>

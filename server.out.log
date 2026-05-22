@@ -1,0 +1,501 @@
+Demo blockchain API running at http://localhost:3000
+Sample wallets: alice-wallet, bob-wallet, carol-wallet
+Pool miners: miner-alpha, miner-beta, miner-gamma
+[transaction] alice-wallet -> bob-wallet | 20 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 15 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 10 TokenB (demo-transfer)
+[mining] Starting auto mining for block #1 with 3 user transactions.
+[pool] Worker Alpha contributed 76 shares this round.
+[pool] Worker Beta contributed 59 shares this round.
+[pool] Worker Gamma contributed 59 shares this round.
+[mining] Block #1 mined with nonce 74295 and hash 0000cc6704161029d997f1f9d85a445f558487570e3be3b548c25b881cf7cf1e
+[block] Added block #1. Chain height is now 2.
+[demo] Auto activity started.
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #2 with 3 user transactions.
+[pool] Worker Alpha contributed 107 shares this round.
+[pool] Worker Beta contributed 84 shares this round.
+[pool] Worker Gamma contributed 24 shares this round.
+[mining] Block #2 mined with nonce 24193 and hash 0000f7985f8f1d03fd11f7edc43c14fec0998ac2a4c9224af465b7f90ea59dcc
+[block] Added block #2. Chain height is now 3.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #3 with 3 user transactions.
+[pool] Worker Alpha contributed 66 shares this round.
+[pool] Worker Beta contributed 77 shares this round.
+[pool] Worker Gamma contributed 24 shares this round.
+[mining] Block #3 mined with nonce 92339 and hash 00005de790e6c3f89a68227683d3cfaa063b268397b5515aea04628453beeab1
+[block] Added block #3. Chain height is now 4.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #4 with 3 user transactions.
+[pool] Worker Alpha contributed 68 shares this round.
+[pool] Worker Beta contributed 73 shares this round.
+[pool] Worker Gamma contributed 35 shares this round.
+[mining] Block #4 mined with nonce 62398 and hash 0000085dc2b9e298d7e39fa33d059f19739731849235873a8ed79db43a43c70b
+[block] Added block #4. Chain height is now 5.
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #5 with 3 user transactions.
+[pool] Worker Alpha contributed 92 shares this round.
+[pool] Worker Beta contributed 78 shares this round.
+[pool] Worker Gamma contributed 31 shares this round.
+[mining] Block #5 mined with nonce 146414 and hash 00005104301cb4dfac655239ce9230d1510dc23f61f59191d4f7d1ab036708e9
+[block] Added block #5. Chain height is now 6.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #6 with 3 user transactions.
+[pool] Worker Alpha contributed 123 shares this round.
+[pool] Worker Beta contributed 83 shares this round.
+[pool] Worker Gamma contributed 53 shares this round.
+[mining] Block #6 mined with nonce 21623 and hash 00006e8f0218805e26181eb30f27e75a4f5fdb0a0410bd5eec506ed369c74de7
+[block] Added block #6. Chain height is now 7.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #7 with 3 user transactions.
+[pool] Worker Alpha contributed 106 shares this round.
+[pool] Worker Beta contributed 82 shares this round.
+[pool] Worker Gamma contributed 63 shares this round.
+[mining] Block #7 mined with nonce 90073 and hash 000016edc555c0d2763ec6453674575c8ceb2a1d35643d4aeaa4d83ec69478bf
+[block] Added block #7. Chain height is now 8.
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #8 with 3 user transactions.
+[pool] Worker Alpha contributed 141 shares this round.
+[pool] Worker Beta contributed 94 shares this round.
+[pool] Worker Gamma contributed 67 shares this round.
+[mining] Block #8 mined with nonce 4286 and hash 00003fd2963e4de9b7f7f9c87eae16e7c16bc43f12458c2efc5d788b53d662be
+[block] Added block #8. Chain height is now 9.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #9 with 3 user transactions.
+[pool] Worker Alpha contributed 59 shares this round.
+[pool] Worker Beta contributed 42 shares this round.
+[pool] Worker Gamma contributed 33 shares this round.
+[mining] Block #9 mined with nonce 55534 and hash 0000689a69d15d2cfb44a190ff3b58e6a1377df5c2d474ec070e3a486e57ac77
+[block] Added block #9. Chain height is now 10.
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[mining] Starting auto mining for block #10 with 3 user transactions.
+[pool] Worker Alpha contributed 92 shares this round.
+[pool] Worker Beta contributed 56 shares this round.
+[pool] Worker Gamma contributed 31 shares this round.
+[mining] Block #10 mined with nonce 60941 and hash 00004b13091f1a83f719bd83c5fbb9c43e68c1023f7849012f14042784c8a8c8
+[block] Added block #10. Chain height is now 11.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[mining] Starting auto mining for block #11 with 3 user transactions.
+[pool] Worker Alpha contributed 105 shares this round.
+[pool] Worker Beta contributed 82 shares this round.
+[pool] Worker Gamma contributed 49 shares this round.
+[mining] Block #11 mined with nonce 4331 and hash 0000f3b79ef6dd05cd4a3a05879382f47297b505d30e11b639cb0a42cf64f0bb
+[block] Added block #11. Chain height is now 12.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #12 with 3 user transactions.
+[pool] Worker Alpha contributed 58 shares this round.
+[pool] Worker Beta contributed 87 shares this round.
+[pool] Worker Gamma contributed 52 shares this round.
+[mining] Block #12 mined with nonce 53659 and hash 0000305998292bf44ef3fa875a760c3b964808f1549cf38c4121b4ed13d9baa2
+[block] Added block #12. Chain height is now 13.
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[mining] Starting auto mining for block #13 with 3 user transactions.
+[pool] Worker Alpha contributed 68 shares this round.
+[pool] Worker Beta contributed 74 shares this round.
+[pool] Worker Gamma contributed 32 shares this round.
+[mining] Block #13 mined with nonce 178936 and hash 00007fe2c79139f538cce314c7e5d7022e9ed0eca0755f66345975fb95f4532c
+[block] Added block #13. Chain height is now 14.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #14 with 3 user transactions.
+[pool] Worker Alpha contributed 76 shares this round.
+[pool] Worker Beta contributed 85 shares this round.
+[pool] Worker Gamma contributed 57 shares this round.
+[mining] Block #14 mined with nonce 80629 and hash 0000826f4b1686477b11354be4bea0d164b8a6603af76d7b19b5e84fdf05c6bb
+[block] Added block #14. Chain height is now 15.
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #15 with 3 user transactions.
+[pool] Worker Alpha contributed 105 shares this round.
+[pool] Worker Beta contributed 39 shares this round.
+[pool] Worker Gamma contributed 34 shares this round.
+[mining] Block #15 mined with nonce 1926 and hash 0000ca28c46a513459ec4f9e7a924fc5d2b7ef0d3e03afecc09c1928b002f5f1
+[block] Added block #15. Chain height is now 16.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #16 with 3 user transactions.
+[pool] Worker Alpha contributed 63 shares this round.
+[pool] Worker Beta contributed 39 shares this round.
+[pool] Worker Gamma contributed 20 shares this round.
+[mining] Block #16 mined with nonce 109879 and hash 000031d18a79c151f635fdda3676ebfe7088352a95435f8e5b58f92aa7d6d992
+[block] Added block #16. Chain height is now 17.
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #17 with 3 user transactions.
+[pool] Worker Alpha contributed 67 shares this round.
+[pool] Worker Beta contributed 37 shares this round.
+[pool] Worker Gamma contributed 47 shares this round.
+[mining] Block #17 mined with nonce 9050 and hash 0000e87d44b4911608680c8ad935d0f976d71b831cf52323338ca1fb2d757034
+[block] Added block #17. Chain height is now 18.
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #18 with 3 user transactions.
+[pool] Worker Alpha contributed 62 shares this round.
+[pool] Worker Beta contributed 73 shares this round.
+[pool] Worker Gamma contributed 28 shares this round.
+[mining] Block #18 mined with nonce 84105 and hash 00007bcb482f5a06d28612a2f25fcd3c2a78ff70981ff0d46120d6c15aebefd8
+[block] Added block #18. Chain height is now 19.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #19 with 3 user transactions.
+[pool] Worker Alpha contributed 146 shares this round.
+[pool] Worker Beta contributed 79 shares this round.
+[pool] Worker Gamma contributed 52 shares this round.
+[mining] Block #19 mined with nonce 51402 and hash 0000b2685235c81c5fd4d6be9f6d2566f02f0ef56b78a0e71da7b255b78649ba
+[block] Added block #19. Chain height is now 20.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #20 with 3 user transactions.
+[pool] Worker Alpha contributed 107 shares this round.
+[pool] Worker Beta contributed 66 shares this round.
+[pool] Worker Gamma contributed 31 shares this round.
+[mining] Block #20 mined with nonce 63029 and hash 0000f84c5dcc2398eb871245231533d44741ed82a94c4b49ed6381eea7ce16fb
+[block] Added block #20. Chain height is now 21.
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[mining] Starting auto mining for block #21 with 3 user transactions.
+[pool] Worker Alpha contributed 104 shares this round.
+[pool] Worker Beta contributed 69 shares this round.
+[pool] Worker Gamma contributed 41 shares this round.
+[mining] Block #21 mined with nonce 141110 and hash 0000cdb481904fe87dfb80078028409ceb1c1f84d32809d517a1e1fd39836b03
+[block] Added block #21. Chain height is now 22.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[mining] Starting auto mining for block #22 with 3 user transactions.
+[pool] Worker Alpha contributed 73 shares this round.
+[pool] Worker Beta contributed 48 shares this round.
+[pool] Worker Gamma contributed 26 shares this round.
+[mining] Block #22 mined with nonce 46097 and hash 00000a4958992fb51971ace0c9d3345d299631e413c8235d4cda61d296499eaa
+[block] Added block #22. Chain height is now 23.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #23 with 3 user transactions.
+[pool] Worker Alpha contributed 127 shares this round.
+[pool] Worker Beta contributed 83 shares this round.
+[pool] Worker Gamma contributed 44 shares this round.
+[mining] Block #23 mined with nonce 2975 and hash 000032840a9a02622a46964eda8acd85acec79d2cda41418f3c2e4eb433c6dc2
+[block] Added block #23. Chain height is now 24.
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #24 with 3 user transactions.
+[pool] Worker Alpha contributed 68 shares this round.
+[pool] Worker Beta contributed 43 shares this round.
+[pool] Worker Gamma contributed 21 shares this round.
+[mining] Block #24 mined with nonce 22554 and hash 0000432b97f7f2e5d32e06df3258f962daaa1c864722d103ab752be50a519d82
+[block] Added block #24. Chain height is now 25.
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #25 with 3 user transactions.
+[pool] Worker Alpha contributed 64 shares this round.
+[pool] Worker Beta contributed 63 shares this round.
+[pool] Worker Gamma contributed 56 shares this round.
+[mining] Block #25 mined with nonce 55673 and hash 000095f81d856c5ca3451a882c1d3563a7af2e76832e3c65c2c698afdd2f65f6
+[block] Added block #25. Chain height is now 26.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #26 with 3 user transactions.
+[pool] Worker Alpha contributed 79 shares this round.
+[pool] Worker Beta contributed 91 shares this round.
+[pool] Worker Gamma contributed 64 shares this round.
+[mining] Block #26 mined with nonce 6416 and hash 0000445ec0e342f145ace96fcf64a1f0dd8525ff22ddc1762f7b2bbb9c56a912
+[block] Added block #26. Chain height is now 27.
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #27 with 3 user transactions.
+[pool] Worker Alpha contributed 149 shares this round.
+[pool] Worker Beta contributed 53 shares this round.
+[pool] Worker Gamma contributed 28 shares this round.
+[mining] Block #27 mined with nonce 44156 and hash 0000d03e278d4026329d0ae789c845bcf393053c3dfa36d3cc2a9b7187f923b1
+[block] Added block #27. Chain height is now 28.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #28 with 3 user transactions.
+[pool] Worker Alpha contributed 112 shares this round.
+[pool] Worker Beta contributed 67 shares this round.
+[pool] Worker Gamma contributed 46 shares this round.
+[mining] Block #28 mined with nonce 76090 and hash 0000f95daf01fa72c516a815107595c2884720f1c54a205fdd30d66b9f8890f5
+[block] Added block #28. Chain height is now 29.
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #29 with 3 user transactions.
+[pool] Worker Alpha contributed 103 shares this round.
+[pool] Worker Beta contributed 36 shares this round.
+[pool] Worker Gamma contributed 63 shares this round.
+[mining] Block #29 mined with nonce 41782 and hash 0000ebe8e088f09887e48b45c55172ead1ecc3131c56df61a6313b2cdb61844a
+[block] Added block #29. Chain height is now 30.
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #30 with 3 user transactions.
+[pool] Worker Alpha contributed 61 shares this round.
+[pool] Worker Beta contributed 87 shares this round.
+[pool] Worker Gamma contributed 34 shares this round.
+[mining] Block #30 mined with nonce 29599 and hash 0000ac5af20cddfb1b2ecb79e7b2bc4e7d3bb7a289b22d8eb26b0d359a6464dd
+[block] Added block #30. Chain height is now 31.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[demo] Auto activity stopped.
+[demo] Auto activity started.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #31 with 3 user transactions.
+[pool] Worker Alpha contributed 134 shares this round.
+[pool] Worker Beta contributed 54 shares this round.
+[pool] Worker Gamma contributed 32 shares this round.
+[mining] Block #31 mined with nonce 204973 and hash 0000009e12a73b502d0934ea8679714e3535c03c82b6ba8755ad274f02be55d0
+[block] Added block #31. Chain height is now 32.
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[mining] Starting auto mining for block #32 with 3 user transactions.
+[pool] Worker Alpha contributed 83 shares this round.
+[pool] Worker Beta contributed 87 shares this round.
+[pool] Worker Gamma contributed 47 shares this round.
+[mining] Block #32 mined with nonce 46253 and hash 0000762135a0f7ded71ae408dcc261b5a0208ce930cb1dc139ab231bf60651d2
+[block] Added block #32. Chain height is now 33.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[mining] Starting auto mining for block #33 with 3 user transactions.
+[pool] Worker Alpha contributed 130 shares this round.
+[pool] Worker Beta contributed 54 shares this round.
+[pool] Worker Gamma contributed 39 shares this round.
+[mining] Block #33 mined with nonce 55928 and hash 0000b2054938f2ec31a2c953a1d69fcf8ed06b9e6e8c4b8fdfc42155598f2081
+[block] Added block #33. Chain height is now 34.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #34 with 3 user transactions.
+[pool] Worker Alpha contributed 119 shares this round.
+[pool] Worker Beta contributed 84 shares this round.
+[pool] Worker Gamma contributed 32 shares this round.
+[mining] Block #34 mined with nonce 100004 and hash 0000b907eb3f167615eb44aa821b12f3897ab6fb8aa38584e5cb54c234a33b45
+[block] Added block #34. Chain height is now 35.
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[mining] Starting auto mining for block #35 with 3 user transactions.
+[pool] Worker Alpha contributed 77 shares this round.
+[pool] Worker Beta contributed 57 shares this round.
+[pool] Worker Gamma contributed 38 shares this round.
+[mining] Block #35 mined with nonce 45487 and hash 0000ec283bc7264c044fb836b7d809b750c3e131005a7d9b7b4e01cb24a75ca0
+[block] Added block #35. Chain height is now 36.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #36 with 3 user transactions.
+[pool] Worker Alpha contributed 100 shares this round.
+[pool] Worker Beta contributed 48 shares this round.
+[pool] Worker Gamma contributed 21 shares this round.
+[mining] Block #36 mined with nonce 162972 and hash 0000e472be6d018b7c87e93236bdd524eeb1600ddd73242b1cbfeff61c98b99c
+[block] Added block #36. Chain height is now 37.
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #37 with 3 user transactions.
+[pool] Worker Alpha contributed 112 shares this round.
+[pool] Worker Beta contributed 58 shares this round.
+[pool] Worker Gamma contributed 56 shares this round.
+[mining] Block #37 mined with nonce 74775 and hash 00005534285b44d28023d84e46a7e94e753e209ee6073b8100349abda47698f4
+[block] Added block #37. Chain height is now 38.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #38 with 3 user transactions.
+[pool] Worker Alpha contributed 111 shares this round.
+[pool] Worker Beta contributed 73 shares this round.
+[pool] Worker Gamma contributed 22 shares this round.
+[mining] Block #38 mined with nonce 17569 and hash 0000ffd6ad0556cf6a6186c07827bf84534dc1707ceb76599c5fe41088f667ca
+[block] Added block #38. Chain height is now 39.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #39 with 3 user transactions.
+[pool] Worker Alpha contributed 100 shares this round.
+[pool] Worker Beta contributed 49 shares this round.
+[pool] Worker Gamma contributed 41 shares this round.
+[mining] Block #39 mined with nonce 45596 and hash 000014cd1694da7b8e37daae2382f7cb454a880f22970a5077a99ae54804f25d
+[block] Added block #39. Chain height is now 40.
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #40 with 3 user transactions.
+[pool] Worker Alpha contributed 119 shares this round.
+[pool] Worker Beta contributed 47 shares this round.
+[pool] Worker Gamma contributed 35 shares this round.
+[mining] Block #40 mined with nonce 116919 and hash 0000ff10bf040caff2773253202bd34f656895e027b4340cfc8fb558968923dd
+[block] Added block #40. Chain height is now 41.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #41 with 3 user transactions.
+[pool] Worker Alpha contributed 115 shares this round.
+[pool] Worker Beta contributed 88 shares this round.
+[pool] Worker Gamma contributed 48 shares this round.
+[mining] Block #41 mined with nonce 17490 and hash 00004123e8603bd3fccaa917c799461618e61184575b68ece3f91ad595cc2c05
+[block] Added block #41. Chain height is now 42.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #42 with 3 user transactions.
+[pool] Worker Alpha contributed 58 shares this round.
+[pool] Worker Beta contributed 83 shares this round.
+[pool] Worker Gamma contributed 40 shares this round.
+[mining] Block #42 mined with nonce 73461 and hash 000083826dbcc7463dfb3463983c958497823f55726fe752081529fb3e8c6f19
+[block] Added block #42. Chain height is now 43.
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[mining] Starting auto mining for block #43 with 3 user transactions.
+[pool] Worker Alpha contributed 115 shares this round.
+[pool] Worker Beta contributed 41 shares this round.
+[pool] Worker Gamma contributed 21 shares this round.
+[mining] Block #43 mined with nonce 118157 and hash 000001411e6add58538b61c1a3b62810ae7d5365e8a9c2f178bc5c6f47554f2d
+[block] Added block #43. Chain height is now 44.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[mining] Starting auto mining for block #44 with 3 user transactions.
+[pool] Worker Alpha contributed 64 shares this round.
+[pool] Worker Beta contributed 81 shares this round.
+[pool] Worker Gamma contributed 49 shares this round.
+[mining] Block #44 mined with nonce 3118 and hash 0000a4a2581572e43344413a094778002dd394416d1e740f64cb53f031ecef94
+[block] Added block #44. Chain height is now 45.
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #45 with 3 user transactions.
+[pool] Worker Alpha contributed 74 shares this round.
+[pool] Worker Beta contributed 50 shares this round.
+[pool] Worker Gamma contributed 44 shares this round.
+[mining] Block #45 mined with nonce 88301 and hash 0000a592d1ac8a56da094c8335a4a47ed00055bba00c0901c78c73dd6d5e30a2
+[block] Added block #45. Chain height is now 46.
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #46 with 3 user transactions.
+[pool] Worker Alpha contributed 146 shares this round.
+[pool] Worker Beta contributed 55 shares this round.
+[pool] Worker Gamma contributed 43 shares this round.
+[mining] Block #46 mined with nonce 142113 and hash 00002e085e459402d37c7af8efe6b61fe73e8e54577d4e3ab2eef5cc9438c0d8
+[block] Added block #46. Chain height is now 47.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #47 with 3 user transactions.
+[pool] Worker Alpha contributed 149 shares this round.
+[pool] Worker Beta contributed 50 shares this round.
+[pool] Worker Gamma contributed 55 shares this round.
+[mining] Block #47 mined with nonce 55491 and hash 00003f45d49310806e65791d0a3eb5652a70b02aeccc398dda6a4124eadc95ea
+[block] Added block #47. Chain height is now 48.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #48 with 3 user transactions.
+[pool] Worker Alpha contributed 129 shares this round.
+[pool] Worker Beta contributed 68 shares this round.
+[pool] Worker Gamma contributed 60 shares this round.
+[mining] Block #48 mined with nonce 33105 and hash 0000cea34992174ef89b2e722a12e662071a3d002545cdb6bda82cfc1a74672f
+[block] Added block #48. Chain height is now 49.
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #49 with 3 user transactions.
+[pool] Worker Alpha contributed 152 shares this round.
+[pool] Worker Beta contributed 71 shares this round.
+[pool] Worker Gamma contributed 42 shares this round.
+[mining] Block #49 mined with nonce 104712 and hash 0000d17bd4e317b37f330aaaeef7e07fe010e076c9ea322ba0d4b3f59eb6b0ef
+[block] Added block #49. Chain height is now 50.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-alpha -> alice-wallet | 6 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[mining] Starting auto mining for block #50 with 3 user transactions.
+[pool] Worker Alpha contributed 85 shares this round.
+[pool] Worker Beta contributed 37 shares this round.
+[pool] Worker Gamma contributed 57 shares this round.
+[mining] Block #50 mined with nonce 25241 and hash 0000187e5cfb74bc179c8df88bb6f6336632ab964bbf3533c81c314e8a1c3959
+[block] Added block #50. Chain height is now 51.
+[swap] alice-wallet swapping 5 TokenA for 10 TokenB
+[transaction] alice-wallet -> swap-pool | 5 TokenA (swap-in)
+[transaction] swap-pool -> alice-wallet | 10 TokenB (swap-out)
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[mining] Starting auto mining for block #51 with 3 user transactions.
+[pool] Worker Alpha contributed 89 shares this round.
+[pool] Worker Beta contributed 32 shares this round.
+[pool] Worker Gamma contributed 25 shares this round.
+[mining] Block #51 mined with nonce 34059 and hash 00007c32a5a9c0c5da2a7b7e78e2c7334941443c78523a6931c1772d81c25d47
+[block] Added block #51. Chain height is now 52.
+[transaction] miner-beta -> bob-wallet | 4 TokenA (miner-transfer)
+[transaction] alice-wallet -> bob-wallet | 5 TokenB (demo-transfer)
+[transaction] bob-wallet -> carol-wallet | 7 TokenB (demo-transfer)
+[mining] Starting auto mining for block #52 with 3 user transactions.
+[pool] Worker Alpha contributed 93 shares this round.
+[pool] Worker Beta contributed 78 shares this round.
+[pool] Worker Gamma contributed 36 shares this round.
+[mining] Block #52 mined with nonce 32591 and hash 0000f1d495080a32dbf07527e76bf3e64cc370e34d70f677bee0cd1e4b0d3cfc
+[block] Added block #52. Chain height is now 53.
+[transaction] carol-wallet -> alice-wallet | 6 TokenB (demo-transfer)
+[transaction] miner-gamma -> carol-wallet | 3 TokenA (miner-transfer)
+[demo] Auto activity stopped.
