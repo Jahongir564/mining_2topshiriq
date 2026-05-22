@@ -1,0 +1,1 @@
+# mining_2topshiriq
